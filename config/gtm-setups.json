@@ -1,0 +1,167 @@
+{
+  "service_type": "gtm-setups",
+  "service_name": "GTM Setups - Emergency Tracking Recovery",
+  "service_packages": {
+    "emergency": {
+      "name": "Emergency Recovery",
+      "price": "$497",
+      "sla": "24 hours",
+      "description": "Critical tracking fixes with emergency response"
+    },
+    "audit": {
+      "name": "Complete Audit",
+      "price": "$797",
+      "sla": "48-72 hours",
+      "description": "Full 4-layer diagnostic with comprehensive fixes"
+    },
+    "serverside": {
+      "name": "Server-Side Implementation",
+      "price": "$1,297",
+      "sla": "1 week",
+      "description": "Complete sGTM setup with advanced tracking"
+    },
+    "monitoring": {
+      "name": "Monthly Monitoring",
+      "price": "$197/month",
+      "sla": "Ongoing",
+      "description": "Continuous tracking validation and support"
+    }
+  },
+  "diagnostic_framework": {
+    "layers": [
+      {
+        "layer": 1,
+        "name": "Infrastructure",
+        "focus": "GTM container loading and network connectivity",
+        "tools": ["Network tab", "Console inspection", "Script verification"]
+      },
+      {
+        "layer": 2,
+        "name": "Implementation",
+        "focus": "GTM configuration and data layer structure",
+        "tools": ["GTM Preview Mode", "Tag Assistant", "Variable resolver"]
+      },
+      {
+        "layer": 3,
+        "name": "Transmission",
+        "focus": "Data sending from browser to Google servers",
+        "tools": ["Network monitoring", "Request analysis", "Payload inspection"]
+      },
+      {
+        "layer": 4,
+        "name": "Processing",
+        "focus": "GA4 data interpretation and reporting",
+        "tools": ["GA4 DebugView", "BigQuery validation", "Report analysis"]
+      }
+    ]
+  },
+  "agent_workflows": {
+    "emergency": [
+      {
+        "phase": "assessment",
+        "agent": "gtm-prospect",
+        "duration_hours": 0.5,
+        "deliverable": "Emergency qualification"
+      },
+      {
+        "phase": "diagnosis",
+        "agent": "gtm-diagnostics",
+        "duration_hours": 2,
+        "deliverable": "4-layer analysis"
+      },
+      {
+        "phase": "implementation",
+        "agent": "gtm-support",
+        "duration_hours": 4,
+        "deliverable": "Critical fixes"
+      },
+      {
+        "phase": "delivery",
+        "agent": "pm-gtm",
+        "duration_hours": 1,
+        "deliverable": "Validation & handoff"
+      }
+    ],
+    "audit": [
+      {
+        "phase": "assessment",
+        "agent": "gtm-prospect",
+        "duration_hours": 1,
+        "deliverable": "Comprehensive assessment"
+      },
+      {
+        "phase": "diagnosis",
+        "agent": "gtm-diagnostics",
+        "duration_hours": 8,
+        "deliverable": "Full 4-layer analysis"
+      },
+      {
+        "phase": "implementation",
+        "agent": "gtm-support",
+        "duration_hours": 16,
+        "deliverable": "All identified fixes"
+      },
+      {
+        "phase": "enhancement",
+        "agent": "enhanced-conversions",
+        "duration_hours": 8,
+        "deliverable": "Advanced tracking setup"
+      },
+      {
+        "phase": "delivery",
+        "agent": "pm-gtm",
+        "duration_hours": 4,
+        "deliverable": "Documentation & monitoring"
+      }
+    ]
+  },
+  "quality_standards": {
+    "response_times": {
+      "critical": "2 hours",
+      "standard": "8 hours",
+      "planned": "24 hours"
+    },
+    "success_metrics": {
+      "tracking_accuracy": ">95%",
+      "revenue_recovery": ">95%",
+      "implementation_success": "98%",
+      "client_satisfaction": "95%"
+    },
+    "technical_requirements": {
+      "gtm_load_time": "<500ms",
+      "ga4_event_delivery": ">98%",
+      "serverside_uptime": "99.9%",
+      "diagnostic_accuracy": "95%"
+    }
+  },
+  "emergency_classifications": {
+    "critical": [
+      "Complete tracking failure",
+      "Revenue data loss >20%",
+      "GA4 migration disasters",
+      "Server-side GTM downtime"
+    ],
+    "standard": [
+      "Partial tracking problems",
+      "Configuration inconsistencies",
+      "Performance optimization",
+      "Consent mode setup"
+    ],
+    "planned": [
+      "New tracking requirements",
+      "Platform migrations",
+      "Compliance updates",
+      "Feature enhancements"
+    ]
+  },
+  "template_variables": {
+    "client_name": "{{CLIENT_NAME}}",
+    "client_domain": "{{CLIENT_DOMAIN}}",
+    "client_industry": "{{CLIENT_INDUSTRY}}",
+    "emergency_level": "{{EMERGENCY_LEVEL}}",
+    "service_package": "{{SERVICE_PACKAGE}}",
+    "service_price": "{{SERVICE_PRICE}}",
+    "delivery_sla": "{{DELIVERY_SLA}}",
+    "support_level": "{{SUPPORT_LEVEL}}"
+  }
+}

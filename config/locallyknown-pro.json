@@ -1,0 +1,76 @@
+{
+  "service_type": "locallyknown-pro",
+  "service_name": "LocallyKnown.pro Website Service",
+  "pricing": {
+    "setup_price": "$19.95",
+    "monthly_price": null,
+    "currency": "USD"
+  },
+  "timeline": {
+    "delivery_days": 7,
+    "phases": {
+      "research": 2,
+      "content": 2,
+      "development": 2,
+      "delivery": 1
+    }
+  },
+  "deliverables": {
+    "website_pages": 3,
+    "content_pages": 2,
+    "blog_setup": true,
+    "seo_research": true,
+    "analytics_setup": true
+  },
+  "site_structure": {
+    "pages": ["Home", "About", "Contact"],
+    "blog": true,
+    "contact_form": true,
+    "analytics": ["GA4", "GTM"],
+    "seo_features": ["Local SEO", "Schema markup", "Meta optimization"]
+  },
+  "agent_workflow": [
+    {
+      "phase": "research",
+      "agents": ["competitor-research", "seo-strategist"],
+      "duration_days": 2
+    },
+    {
+      "phase": "content",
+      "agents": ["content-writer"],
+      "duration_days": 2
+    },
+    {
+      "phase": "development",
+      "agents": ["jekyll-developer", "analytics-setup"],
+      "duration_days": 2
+    },
+    {
+      "phase": "delivery",
+      "agents": ["pm-localknown"],
+      "duration_days": 1
+    }
+  ],
+  "quality_standards": {
+    "lighthouse_score": 90,
+    "mobile_friendly": true,
+    "core_web_vitals": true,
+    "seo_audit": true,
+    "analytics_verification": true
+  },
+  "niche_specializations": [
+    "local-services",
+    "professional-services",
+    "retail-ecommerce",
+    "restaurants-hospitality",
+    "beauty-wellness"
+  ],
+  "template_variables": {
+    "client_name": "{{CLIENT_NAME}}",
+    "client_niche": "{{CLIENT_NICHE}}",
+    "client_location": "{{CLIENT_LOCATION}}",
+    "client_contact": "{{CLIENT_CONTACT}}",
+    "service_price": "{{SERVICE_PRICE}}",
+    "delivery_timeline": "{{DELIVERY_TIMELINE}}"
+  }
+}
