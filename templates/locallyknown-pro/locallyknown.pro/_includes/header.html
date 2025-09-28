@@ -1,0 +1,37 @@
+<header class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="/" class="flex items-center space-x-3">
+                    <img src="/assets/images/map-pointer.png" alt="Locally Known Pro Logo" class="w-10 h-10">
+                    <span class="text-2xl font-bold text-black">Locally Known Pro</span>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#comparison" class="text-gray-700 hover:text-blue-600 transition font-bold text-lg">Why Static Sites</a>
+                <a href="about" class="text-gray-700 hover:text-blue-600 transition font-bold text-lg">About</a>
+                <a href="#contact" class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg transition">
+                    Get Started
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+            <a href="#comparison" class="block text-gray-700 hover:text-blue-600 py-2">Why Static Sites</a>
+            <a href="about" class="block text-gray-700 hover:text-blue-600 py-2">About</a>
+            <a href="#contact" class="block bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center">
+                Get Started
+            </a>
+        </div>
+    </nav>
+</header>

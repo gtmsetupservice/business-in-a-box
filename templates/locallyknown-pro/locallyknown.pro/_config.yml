@@ -1,0 +1,43 @@
+# Site settings
+title: LocallyKnown.pro
+email: hello@locallyknown.pro
+description: >-
+  White-glove Jekyll websites that outrank WordPress. Complete digital marketing foundations
+  with competitor analysis, strategic content, and bulletproof analytics.
+baseurl: ""
+url: "https://gtmsetupservice.github.io/locallyknown.pro"
+
+# Company info
+company:
+  name: "B and B Holdings LLC"
+  dba: "LocallyKnown.pro"
+  location: "Wyoming, USA"
+
+# Service pricing
+pricing:
+  setup_price: "$1,995"
+  monthly_price: "$297"
+  setup_description: "Complete digital foundation setup"
+  monthly_description: "2 strategic content pieces & optimization"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  includes:
+    output: false
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
