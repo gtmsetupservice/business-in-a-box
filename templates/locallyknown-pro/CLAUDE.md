@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with Lo
 
 ## Project Overview
 
-LocallyKnown.pro Template is a business-in-a-box system for delivering $19.95 website services. It provides complete digital marketing foundations with competitor analysis, strategic content, and bulletproof analytics using the proven GTMSetupService framework.
+LocallyKnown.pro Template is a business-in-a-box system for delivering $1,995.00 website services. It provides complete digital marketing foundations with competitor analysis, strategic content, and bulletproof analytics using the proven GTMSetupService framework.
 
-## Service Package: $19.95 Website Service
+## Service Package: $1,995.00 Website Service
 
 **Deliverables:**
 - 3-page Jekyll website (Home, About, Contact)
@@ -42,7 +42,7 @@ load analytics setup
 
 ### Project Management
 ```bash
-# LocallyKnown PM Agent - Project delivery for $19.95 service
+# LocallyKnown PM Agent - Project delivery for $1,995.00 service
 load pm localknown
 ```
 
@@ -77,7 +77,7 @@ load pm localknown
 - `{{CLIENT_CONTACT}}` - Contact information
 
 **Service Configuration:**
-- `{{SERVICE_PRICE}}` - $19.95 (fixed)
+- `{{SERVICE_PRICE}}` - $1,995.00 (fixed)
 - `{{DELIVERY_TIMELINE}}` - 5-7 days (standard)
 - `{{SITE_PAGES}}` - 3 pages (Home, About, Contact)
 - `{{CONTENT_PAGES}}` - 2 pages + blog setup

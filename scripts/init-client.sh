@@ -206,7 +206,7 @@ echo "  2. Review client-config.json"
 
 if [ "$BUSINESS_TYPE" = "locallyknown-pro" ]; then
     echo "  3. load competitor research"
-    echo "  4. Begin $19.95 website service workflow"
+    echo "  4. Begin $1,995.00 website service workflow"
 elif [ "$BUSINESS_TYPE" = "gtm-setups" ]; then
     echo "  3. load gtm prospect"
     echo "  4. Begin GTM emergency assessment"

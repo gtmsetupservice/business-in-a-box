@@ -8,7 +8,7 @@ This system transforms your proven business automation framework into repeatable
 
 ## 📦 Business Templates
 
-### LocallyKnown.pro ($19.95 Website Service)
+### LocallyKnown.pro ($1,995.00 Website Service)
 **Complete digital foundation in 5-7 days:**
 - 3-page Jekyll website (Home, About, Contact)
 - First 2 pages of content + blog setup
@@ -65,7 +65,7 @@ load gtm support
 ```
 business-in-a-box/
 ├── templates/
-│   ├── locallyknown-pro/      # $19.95 service template
+│   ├── locallyknown-pro/      # $1,995.00 service template
 │   │   ├── CLAUDE.md          # Agent instructions
 │   │   ├── _config.yml        # Jekyll configuration
 │   │   └── [Jekyll site]      # Website template
@@ -190,7 +190,7 @@ load pm gtm               # GTM project coordination
 ## 💰 Pricing Structure
 
 ### LocallyKnown.pro
-- **Setup:** $19.95 (fixed price)
+- **Setup:** $1,995.00 (fixed price)
 - **Timeline:** 5-7 days
 - **Deliverables:** 3-page site + content + SEO plan
 
@@ -227,7 +227,7 @@ load pm gtm               # GTM project coordination
 - **Cost Efficiency:** $0.15 API costs → $15,816/month avoided losses
 - **Delivery Consistency:** 100% on-time completion
 - **Client Satisfaction:** 95%+ across all service lines
-- **Revenue Per Project:** $19.95 - $1,297 depending on service
+- **Revenue Per Project:** $1,995.00 - $1,297 depending on service
 
 ## 🚦 Status & Monitoring
 
