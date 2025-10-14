@@ -1,14 +1,14 @@
 # Site Settings
 title: GTM Setup Services
 description: Emergency GTM recovery and comprehensive tracking audits. Fix broken Google Tag Manager in 2-4 hours.
-url: https://gtmsetupservices.com
+url: https://gtmsetupservice.com
 baseurl: ""
 
 # SEO Settings
 tagline: Fix Your GTM Tracking Issues Today
 author:
   name: GTM Setup Services
-  email: support@gtmsetupservices.com
+  email: support@gtmsetupservice.com
 
 # Jekyll Configuration
 markdown: kramdown
