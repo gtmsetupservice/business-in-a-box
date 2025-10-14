@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/map-pointer.png">
+    <link rel="shortcut icon" href="/assets/images/map-pointer.png">
+
+    <!-- SEO -->
+    {% seo %}
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}" />
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+
+    <!-- Google Fonts with display swap for better performance -->
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Configure Tailwind with custom theme
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'kalam': ['Kalam', 'cursive'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <style>
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+        }
+        @media (max-width: 768px) {
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Markdown Content Styling */
+        main h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            color: #1f2937;
+        }
+        main h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #374151;
+        }
+        main h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #4b5563;
+        }
+        main h4 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            color: #6b7280;
+        }
+        main p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        main ul, main ol {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        main li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 56rem;
+        }
+
+        /* Better spacing and typography */
+        main strong {
+            color: #374151;
+            font-weight: 600;
+        }
+
+        main a {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+
+        main a:hover {
+            color: #1d4ed8;
+        }
+
+        /* Button styling for markdown links */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .btn-primary {
+            background-color: #10b981;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #059669;
+        }
+
+        /* Pricing Effects */
+        .line-through {
+            text-decoration: line-through;
+            text-decoration-color: #dc2626;
+            text-decoration-thickness: 2px;
+            font-size: 1.25em;
+        }
+        .handwritten {
+            font-family: 'Kalam', cursive;
+            position: relative;
+            color: #ef4444 !important;
+            font-weight: bold;
+            transform: rotate(-1deg);
+            display: inline-block;
+            margin-left: 4px;
+            font-size: 1.25em;
+        }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NS95JMSP');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Structured Data -->
+    {%- include structured-data-organization.html -%}
+    {%- include structured-data-breadcrumb.html -%}
+    {%- include structured-data-article.html -%}
+    {%- if page.url == "/" -%}
+      {%- include structured-data-faq.html -%}
+      {%- include structured-data-reviews.html -%}
+    {%- endif -%}
+</head>
+<body class="bg-white">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NS95JMSP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    {% include header.html %}
+
+    <main>
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    <!-- JavaScript -->
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+</body>
+</html>

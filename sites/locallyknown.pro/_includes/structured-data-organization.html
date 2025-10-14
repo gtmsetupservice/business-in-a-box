@@ -1,0 +1,70 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "{{ site.url }}/#organization",
+  "name": "{{ site.company.dba }}",
+  "alternateName": "{{ site.company.name }}",
+  "description": "{{ site.description }}",
+  "url": "{{ site.url }}",
+  "telephone": "+1-307-269-2691",
+  "email": "{{ site.email }}",
+  "address": {
+    "@type": "PostalAddress",
+    "@id": "{{ site.url }}/#address",
+    "addressCountry": "US",
+    "addressRegion": "{{ site.company.location }}"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 42.8083,
+    "longitude": -106.3436
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "serviceType": "Jekyll Website Development & Digital Marketing",
+  "priceRange": "$1995-$2995",
+  "paymentAccepted": ["Cash", "Credit Card", "PayPal"],
+  "currenciesAccepted": "USD",
+  "openingHours": "Mo-Fr 09:00-17:00",
+  "availableLanguage": "English",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Digital Marketing Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Complete Digital Foundation Setup",
+          "description": "White-glove Jekyll websites with competitor analysis, strategic content planning, and bulletproof analytics setup"
+        },
+        "price": "{{ site.pricing.setup_price | remove: '$' }}",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Monthly Strategic Content & Optimization",
+          "description": "2 strategic content pieces per month with ongoing SEO optimization and performance monitoring"
+        },
+        "price": "{{ site.pricing.monthly_price | remove: '$' }}",
+        "priceCurrency": "USD",
+        "billingPeriod": "Monthly"
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "23"
+  },
+  "sameAs": [
+    "https://linkedin.com/{{ site.author.linkedin }}",
+    "https://github.com/gtmsetupservice/locallyknown.pro"
+  ]
+}
+</script>

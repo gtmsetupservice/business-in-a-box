@@ -1,0 +1,21 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Blue gradient for the main logo -->
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60A5FA" />
+      <stop offset="50%" style="stop-color:#3B82F6" />
+      <stop offset="100%" style="stop-color:#1E40AF" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect x="50" y="50" width="200" height="200" rx="40" fill="url(#logoGradient)" />
+
+  <!-- Simplified "A" letter design -->
+  <path d="M 120 80 L 180 80 L 220 220 L 190 220 L 182 190 L 118 190 L 110 220 L 80 220 Z M 125 165 L 175 165 L 160 120 L 140 120 Z"
+        fill="white" opacity="0.9" />
+
+  <!-- Additional design element -->
+  <path d="M 150 100 L 170 100 L 170 180 L 150 180 Z" fill="white" opacity="0.6" />
+  <path d="M 130 100 L 150 100 L 150 140 L 130 140 Z" fill="white" opacity="0.4" />
+</svg>

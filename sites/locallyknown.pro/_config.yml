@@ -1,0 +1,86 @@
+# Site settings
+title: LocallyKnown.pro
+email: hello@locallyknown.pro
+description: >-
+  White-glove Jekyll websites that outrank WordPress. Complete digital marketing foundations
+  with competitor analysis, strategic content, and bulletproof analytics.
+baseurl: ""
+url: "https://locallyknown.pro"
+
+# Company info
+company:
+  name: "B and B Holdings LLC"
+  dba: "LocallyKnown.pro"
+  location: "Wyoming, USA"
+
+# Service pricing
+pricing:
+  setup_price: "$1,995"
+  monthly_price: "$297"
+  setup_description: "Complete digital foundation setup"
+  monthly_description: "2 strategic content pieces & optimization"
+
+# SEO Settings
+author:
+  name: "LocallyKnown.pro"
+  email: "hello@locallyknown.pro"
+  twitter: "locallyknownpro"
+  linkedin: "company/locally-known-pro"
+
+# SEO Plugin Configuration
+social:
+  name: "LocallyKnown.pro"
+  links:
+    - https://linkedin.com/company/locally-known-pro
+    - https://github.com/gtmsetupservice/locallyknown.pro
+
+# SEO Defaults for jekyll-seo-tag
+seo:
+  type: Organization
+  logo: /assets/images/map-pointer.png
+
+# Schema.org structured data
+organization:
+  name: "LocallyKnown.pro"
+  url: "https://locallyknown.pro"
+  logo: "https://locallyknown.pro/assets/images/map-pointer.png"
+  sameAs:
+    - https://linkedin.com/company/locally-known-pro
+
+# Twitter Card defaults
+twitter:
+  username: locallyknownpro
+  card: summary_large_image
+
+# Open Graph defaults
+logo: /assets/images/map-pointer.png
+image: /assets/images/map-pointer.png
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  includes:
+    output: false
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      image: /assets/images/map-pointer.png
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      image: /assets/images/map-pointer.png

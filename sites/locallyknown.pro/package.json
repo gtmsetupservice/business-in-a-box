@@ -1,0 +1,14 @@
+{
+  "name": "locallyknown-pro",
+  "version": "1.0.0",
+  "description": "LocallyKnown.pro - Static Website Development",
+  "scripts": {
+    "build-css": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/style.css --minify",
+    "watch-css": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/style.css --watch",
+    "build": "npm run build-css && bundle exec jekyll build",
+    "dev": "npm run build-css && bundle exec jekyll serve --livereload"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}

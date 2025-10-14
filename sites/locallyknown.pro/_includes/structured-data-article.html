@@ -1,0 +1,39 @@
+{%- if page.layout == "post" -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title }}",
+  "description": "{{ page.excerpt | default: page.description | strip_html | strip }}",
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ page.image | default: '/assets/images/jekyll-website-default.jpg' | absolute_url }}",
+    "width": 1200,
+    "height": 630
+  },
+  "author": {
+    "@type": "Person",
+    "name": "{{ page.author | default: 'LocallyKnown.pro Team' }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ '/assets/images/map-pointer.png' | absolute_url }}",
+      "width": 300,
+      "height": 100
+    }
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  },
+  "keywords": "{{ page.keywords | default: 'Jekyll websites, digital marketing, competitor analysis, strategic content, WordPress alternative, local SEO' }}",
+  "articleSection": "Digital Marketing Strategy",
+  "wordCount": "{{ content | strip_html | number_of_words }}"
+}
+</script>
+{%- endif -%}

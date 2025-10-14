@@ -1,0 +1,49 @@
+# Site Settings
+title: iFix Shopify
+description: Emergency Shopify store recovery and optimization. Fix broken stores, apps, and performance issues in hours.
+url: https://ifixshopify.com
+baseurl: ""
+
+# SEO Settings
+tagline: Fix Your Shopify Store Issues Today
+author:
+  name: iFix Shopify
+  email: support@ifixshopify.com
+
+# Jekyll Configuration
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Collections
+collections:
+  testimonials:
+    output: false
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "iFix Shopify"
+
+# Analytics (to be configured)
+google_analytics: # GA4 Measurement ID
+gtm_container: # GTM Container ID
+
+# CRM Settings
+crm_endpoint: # Your FluentCRM API endpoint
+crm_api_key: # Your FluentCRM API key
+
+# Service-specific settings
+service_type: shopify
+emergency_price: "$297"
+audit_price: "$497"
+monitoring_price: "$89/month"

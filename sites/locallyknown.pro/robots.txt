@@ -1,0 +1,6 @@
+# robots.txt for locallyknown.pro
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://locallyknown.pro/sitemap.xml
