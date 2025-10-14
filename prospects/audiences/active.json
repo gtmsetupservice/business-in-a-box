@@ -1,0 +1,102 @@
+{
+  "server_side_issues": {
+    "created": "2025-01-15",
+    "layer": 3,
+    "name": "Server-Side GTM Problems",
+    "description": "Prospects experiencing server-side GTM configuration and transmission issues",
+    "members": [
+      "reddit_PaintingNo8479_1ngo8tr",
+      "reddit_Ordinary_Creme8718_1ncnveq"
+    ],
+    "total_value": 1794,
+    "avg_urgency": 8.5,
+    "common_problems": [
+      "transport_url_config",
+      "client_setup",
+      "consent_mode_conflicts",
+      "cors_issues"
+    ],
+    "outreach_sequence": "emergency_technical",
+    "messaging_angle": "Same-day fix for server-side tracking failures"
+  },
+  "broken_tracking_critical": {
+    "created": "2025-01-15",
+    "layer": [1, 2],
+    "name": "Critical Tracking Loss",
+    "description": "Businesses losing 50%+ of their tracking data",
+    "members": [
+      "reddit_Yo485_1n85luf",
+      "reddit_curiousalienred_1n7i8dz"
+    ],
+    "total_value": 994,
+    "avg_urgency": 9,
+    "common_problems": [
+      "consent_blocking",
+      "initialization_timing",
+      "dev_breaking_changes"
+    ],
+    "outreach_sequence": "emergency_recovery",
+    "messaging_angle": "Recover your lost tracking data today"
+  },
+  "ga4_ads_sync_failures": {
+    "created": "2025-01-15",
+    "layer": 4,
+    "name": "GA4 to Google Ads Sync Issues",
+    "description": "Conversion data not syncing between GA4 and Google Ads",
+    "members": [
+      "reddit_Organic_Mission_2468_1nek48q",
+      "reddit_brrrc208_1nep6u8"
+    ],
+    "total_value": 994,
+    "avg_urgency": 8.5,
+    "common_problems": [
+      "conversion_import_failure",
+      "attribution_window",
+      "enhanced_conversions",
+      "missing_parameters"
+    ],
+    "outreach_sequence": "conversion_fix",
+    "messaging_angle": "Stop losing conversion credit for your ad spend"
+  },
+  "revenue_reporting_errors": {
+    "created": "2025-01-15",
+    "layer": [2, 4],
+    "name": "Revenue Reporting Failures",
+    "description": "Financial data showing incorrectly in reports",
+    "members": [
+      "reddit_sirLombrosso_1neak5h",
+      "reddit_Organic_Mission_1nbvng2"
+    ],
+    "total_value": 1294,
+    "avg_urgency": 8,
+    "common_problems": [
+      "zero_revenue_transactions",
+      "data_transformation_errors",
+      "currency_formatting",
+      "processing_delays"
+    ],
+    "outreach_sequence": "audit_proposal",
+    "messaging_angle": "Fix your revenue reporting before month-end"
+  },
+  "monitoring_opportunities": {
+    "created": "2025-01-15",
+    "layer": "all",
+    "name": "Proactive Monitoring Candidates",
+    "description": "Businesses experiencing recurring tracking breaks",
+    "members": [
+      "reddit_curiousalienred_1n7i8dz",
+      "reddit_Willing_Interview40_1ndyov8"
+    ],
+    "total_value": 394,
+    "recurring_value": "394/month",
+    "avg_urgency": 7,
+    "common_problems": [
+      "developer_deployments",
+      "no_qa_process",
+      "delayed_detection",
+      "fortune_500_complexity"
+    ],
+    "outreach_sequence": "monitoring_pitch",
+    "messaging_angle": "Never lose tracking data again with proactive monitoring"
+  }
+}

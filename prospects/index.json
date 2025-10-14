@@ -1,0 +1,106 @@
+{
+  "last_updated": "2025-09-15T14:30:00Z",
+  "total_prospects": 8,
+  "pipeline_value": {
+    "immediate": 5772,
+    "recurring_monthly": 197,
+    "weighted_expected": 2165
+  },
+  "by_status": {
+    "identified": 8,
+    "contacted": 0,
+    "diagnostic_sent": 0,
+    "proposal_sent": 0,
+    "closed_won": 0,
+    "closed_lost": 0
+  },
+  "by_urgency": {
+    "critical_10": 2,
+    "urgent_9": 2,
+    "high_8": 3,
+    "medium_7": 1,
+    "low_6_below": 0
+  },
+  "by_layer": {
+    "layer1_infrastructure": 3,
+    "layer2_implementation": 2,
+    "layer3_transmission": 2,
+    "layer4_processing": 1
+  },
+  "hot_leads_requiring_action": [
+    {
+      "id": "reddit_Yo485_1n85luf",
+      "username": "Yo485",
+      "urgency": 10,
+      "problem": "98% data loss",
+      "action": "send_diagnostic_immediately"
+    },
+    {
+      "id": "reddit_Organic_Mission_2468_1nek48q",
+      "username": "Organic_Mission_2468",
+      "urgency": 10,
+      "problem": "Zero Ads conversions",
+      "action": "send_diagnostic_immediately"
+    },
+    {
+      "id": "reddit_PaintingNo8479_1ngo8tr",
+      "username": "PaintingNo8479",
+      "urgency": 9,
+      "problem": "Server-side broken",
+      "action": "send_diagnostic_today"
+    }
+  ],
+  "highest_value_opportunities": [
+    {
+      "id": "reddit_Ordinary_Creme8718_1ncnveq",
+      "value": 1297,
+      "service": "server_migration"
+    },
+    {
+      "id": "reddit_sirLombrosso_1neak5h",
+      "value": 797,
+      "service": "comprehensive_audit"
+    },
+    {
+      "id": "reddit_curiousalienred_1n7i8dz",
+      "value": 197,
+      "service": "monthly_monitoring",
+      "lifetime_value": 2364
+    }
+  ],
+  "audiences": {
+    "server_side_issues": {
+      "count": 2,
+      "value": 1794
+    },
+    "broken_tracking_critical": {
+      "count": 2,
+      "value": 994
+    },
+    "ga4_ads_sync_failures": {
+      "count": 2,
+      "value": 994
+    },
+    "revenue_reporting_errors": {
+      "count": 2,
+      "value": 1294
+    },
+    "monitoring_opportunities": {
+      "count": 2,
+      "monthly_value": 394
+    }
+  },
+  "data_locations": {
+    "prospects": "/prospects/reddit/2025-09/hot-leads/",
+    "audiences": "/prospects/audiences/active.json",
+    "pipeline": "/prospects/reports/pipeline/2025-09-pipeline.csv",
+    "diagnostics": "/prospects/solutions/diagnostic-snippets/",
+    "reports": "/prospects/reports/pipeline/"
+  },
+  "quick_queries": {
+    "all_emergency": "grep -l 'emergency_recovery' prospects/reddit/2025-09/hot-leads/*.json",
+    "urgency_10": "grep -l '\"urgency_score\": 10' prospects/reddit/2025-09/hot-leads/*.json",
+    "server_side": "grep -l 'server' prospects/reddit/2025-09/hot-leads/*.json",
+    "today_captures": "ls -la prospects/reddit/2025-09/hot-leads/ | grep '2025-09-15'"
+  }
+}
