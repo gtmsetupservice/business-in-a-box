@@ -46,6 +46,9 @@ Layer 4 begins after Google's collection servers successfully receive your data.
 
 But problems in Layer 4 manifest as "missing data" that looks like tracking failures—even though your tracking is working perfectly.
 
+![GA4 Data Processing Pipeline](/assets/images/flow-diagram.png)
+*The 8-step GA4 processing pipeline with common failure points. Notice the critical message: "You Have No Control Here!" Once data enters Google's systems, your ability to troubleshoot is limited to configuration changes and BigQuery exports.*
+
 ## The Layer 4 Diagnostic (Found $500K in "Missing" Revenue)
 
 ### Step 1: Verify Data Reached Google

@@ -266,6 +266,9 @@ Let's address the elephant in the room: **30-40% of your traffic is probably blo
 
 This isn't a bug. This isn't something you can "fix" in GTM. It's a fundamental limitation of client-side analytics.
 
+![Standard GTM vs Server-Side GTM: Ad Blocker Interception](/assets/images/gtm-transmission-ad-blocker-diagram.png)
+*Standard client-side setup: Ad blockers intercept requests to google-analytics.com. Server-side GTM: Requests go to your domain, bypassing most ad blockers.*
+
 **Your options:**
 
 **Option 1: Accept the loss**
