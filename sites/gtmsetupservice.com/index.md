@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Emergency GTM Recovery & Tracking Fixes
-description: GTM not working? Get emergency recovery in 2-4 hours. Fix broken Google Tag Manager and restore conversion tracking. $497 fixed price.
+description: GTM not working? Get emergency recovery in 2-4 hours. Fix broken Google Tag Manager and restore conversion tracking. $397 fixed price.
 ---
 
 {% include hero.html %}
@@ -112,7 +112,7 @@ description: GTM not working? Get emergency recovery in 2-4 hours. Fix broken Go
             <div class="bg-white p-8 rounded-lg shadow border-2 border-red-500">
                 <div class="text-center">
                     <h3 class="text-2xl font-bold mb-2 text-red-600">🚨 EMERGENCY</h3>
-                    <p class="text-4xl font-bold mb-4">$497</p>
+                    <p class="text-4xl font-bold mb-4">$397</p>
                     <p class="text-gray-600 mb-6">Fixed Price</p>
                     <ul class="text-left space-y-3 mb-8">
                         <li>✓ 2-4 hour response time</li>

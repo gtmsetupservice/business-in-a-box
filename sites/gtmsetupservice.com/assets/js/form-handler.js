@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (typeof gtag !== 'undefined') {
                         gtag('event', 'generate_lead', {
                             'currency': 'USD',
-                            'value': 497,
+                            'value': 397,
                             'service_type': 'gtm',
                             'problem_type': data.problem
                         });
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             'form_name': 'gtm_contact_form',
                             'service_type': 'gtm',
                             'problem_type': data.problem,
-                            'conversion_value': 497
+                            'conversion_value': 397
                         });
                     }
 
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
             } finally {
                 // Re-enable submit button
                 submitBtn.disabled = false;
-                submitBtn.innerHTML = 'Get Emergency GTM Fix - $497';
+                submitBtn.innerHTML = 'Get Emergency GTM Fix - $397';
             }
         });
     }

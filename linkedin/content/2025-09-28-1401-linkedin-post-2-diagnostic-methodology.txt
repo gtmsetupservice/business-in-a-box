@@ -1,0 +1,44 @@
+🔍 **Day 2: What the Network tab revealed (and why 90% of consultants miss this)**
+
+When I opened Chrome DevTools on my client's broken conversion tracking, here's what I found:
+
+**Layer 1 ✅**: Container firing perfectly
+**Layer 2 ✅**: All tags triggering in debug mode
+**Layer 3 ❌**: This is where everything fell apart
+
+I pulled up the Network tab and triggered a purchase event:
+
+```
+POST https://googleads.g.doubleclick.net/pagead/conversion/
+Status: 200 OK
+Payload: {
+  "conversion_id": "12345678",
+  "conversion_label": "AbCdEfGhIj",
+  "value": 97.00,
+  "currency": "USD"
+}
+```
+
+The network call was sending. The payload looked correct. Status 200 OK.
+
+But still zero conversions in Google Ads.
+
+**This is where most troubleshooting STOPS.**
+
+People see data sending and assume it's a Google platform issue or "needs time to process."
+
+But here's what separates real diagnostic expertise from guesswork:
+
+**You cannot troubleshoot Layer 3 problems without comparing what's being SENT against what's EXPECTED on the receiving platform.**
+
+Tomorrow: The parameter mismatch that was costing $200/day.
+
+What's your go-to method for diagnosing tracking issues?
+
+#DiagnosticMethodology #GTM #TechnicalTroubleshooting
+
+---
+POST 2 OF 5: DIAGNOSTIC METHODOLOGY
+Target: Thursday, Oct 3, 2024 at 9:00 AM
+Expected engagement: Medium-High - technical content for specialists
+Follow-up: Share technical insights in comments
