@@ -33,9 +33,9 @@ defaults:
       layout: "post"
       author: "GTM Setup Services"
 
-# Analytics (to be configured)
-google_analytics: # GA4 Measurement ID
-gtm_container: # GTM Container ID
+# Analytics
+google_analytics: G-QD2PEKQ375 # GA4 Measurement ID
+gtm_container: GTM-M3CR8QZP # GTM Container ID
 
 # CRM Settings
 crm_endpoint: # Your FluentCRM API endpoint
