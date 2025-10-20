@@ -57,8 +57,10 @@ permalink: /blog/
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {% for post in site.posts %}
             <article class="bg-white border rounded-lg shadow-sm hover:shadow-md transition">
-                {% if post.image %}
-                <div class="aspect-video bg-gray-200 rounded-t-lg"></div>
+                {% if post.featured_image %}
+                <div class="aspect-video bg-gray-200 rounded-t-lg overflow-hidden">
+                    <img src="{{ post.featured_image }}" alt="{{ post.title }}" class="w-full h-full object-cover">
+                </div>
                 {% endif %}
 
                 <div class="p-6">
