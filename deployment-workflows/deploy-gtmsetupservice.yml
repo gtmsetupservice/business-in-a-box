@@ -1,11 +1,12 @@
-name: Deploy GTMSetupService.com
+# INSTRUCTIONS:
+# Copy this file to gtmsetupservice/gtmsetupservice.com repository
+# Location: .github/workflows/deploy.yml
+
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches: ["main"]
-    paths:
-      - "sites/gtmsetupservice.com/**"
-      - ".github/workflows/deploy-gtmsetupservice.yml"
   workflow_dispatch:
 
 permissions:
@@ -20,9 +21,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: sites/gtmsetupservice.com
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -32,7 +30,6 @@ jobs:
         with:
           ruby-version: '3.3'
           bundler-cache: true
-          working-directory: sites/gtmsetupservice.com
 
       - name: Setup Pages
         id: pages
@@ -46,7 +43,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: sites/gtmsetupservice.com/_site
+          path: _site
 
   deploy:
     environment:
